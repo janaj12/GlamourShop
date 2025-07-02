@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "pera",
+      "password": "lozinka",
+      "role": "user"
+    },
+    {
+      "id": "41e7",
+      "username": "jana",
+      "password": "123",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Mat Ruž",
+      "description": "Dugotrajan mat ruž u više nijansi.",
+      "price": 1199,
+      "image": "https://static.beautytocare.com/cdn-cgi/image/f=auto/media/catalog/product//r/i/rimmel-london-lasting-finish-lipstick-058-4g_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Puder u kamenu",
+      "description": "Savršen za mat efekat tokom celog dana.",
+      "price": 1599,
+      "image": "https://www.drmax.rs/media/catalog/product/cache/3cb05723209b57fb3ba7f6b065520c0a/1/5/157661_11042024061000.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Maskara Black Volume",
+      "description": "Pruža dužinu i volumen u jednom potezu.",
+      "price": 999,
+      "image": "https://signalshop.rs/storage/articles/100000057815/photos/maybelline-maskara-volume-express-colossal-black-100-1.webp?1750143416"
+    },
+    {
+      "id": 4,
+      "name": "Rumenilo",
+      "description": "Pruža rumeni sjaj.",
+      "price": 430,
+      "image": "https://www.lilly.rs/media/catalog/product/cache/03c23669960748ef434dcc1e546afaa9/7/1/717489821124_1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Korektor",
+      "description": "Pruža veliku pokrivnu moć.",
+      "price": 2650,
+      "image": "https://www.lilly.rs/media/catalog/product/cache/03c23669960748ef434dcc1e546afaa9/3/6/3600530733842_8.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Hajlajter",
+      "description": "Pruža nezaboravan sjaj",
+      "price": 1045,
+      "image": "https://tarabeautyshop.rs/wp-content/uploads/2021/11/Hajlajter-MAKEUP-REVOLUTION-Reloaded-10gDARE-TO-DIVUIGLE.jpg"
+    }
+  ]
+}
