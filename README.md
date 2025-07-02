@@ -1,12 +1,109 @@
-# React + Vite
+# 💄 Glamour Shop – Online prodavnica kozmetike
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Glamour Shop je jednostavna veb aplikacija razvijena kao završni projekat iz predmeta **IT354 – Veb Sistemi 1**. Aplikacija predstavlja online prodavnicu kozmetike u kojoj korisnici mogu da pregledaju proizvode, registruju se, prijave i koriste funkcionalnost korpe. Administrator može da upravlja proizvodima (dodaje, menja, briše) i da pregleda sve korisnike.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧪 Tehnologije
 
-## Expanding the ESLint configuration
+- **React** – frontend biblioteka
+- **Vite** – razvojno okruženje za React aplikaciju
+- **React Router DOM** – navigacija između stranica
+- **Tailwind CSS** – stilizacija korisničkog interfejsa
+- **json-server** – simulacija REST API-ja (fake backend)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Pokretanje aplikacije
+
+### 1. Kloniraj repozitorijum
+
+```bash
+git clone https://github.com/tvoj-github/glamour-shop.git
+cd glamour-shop
+```
+
+### 2. Instaliraj zavisnosti
+
+```bash
+npm install
+```
+
+### 3. Pokreni frontend (Vite)
+
+```bash
+npm run dev
+```
+
+Aplikacija će se pokrenuti na:  
+👉 `http://localhost:5173/`
+
+### 4. Pokreni backend (`json-server`)
+
+```bash
+npm run server
+```
+
+Server će biti dostupan na:  
+👉 `http://localhost:5000/`
+
+---
+
+## 📁 Struktura projekta
+
+```
+/src
+  ├── pages/               # Stranice (Home, Login, Register, AdminPanel, ProductDetails, Cart)
+  ├── components/          # Komponente (Navbar, ProtectedRoute, AdminProductForm)
+  ├── context/             # AuthContext (login, logout, korpa)
+  └── App.jsx              # Glavna logika rutiranja
+```
+
+---
+
+## 👥 Uloge
+
+- **Korisnik**:
+  - Registracija i prijava
+  - Pregled proizvoda
+  - Dodavanje u korpu
+
+- **Administrator**:
+  - Prijava kao `admin`
+  - Dodavanje, izmena i brisanje proizvoda
+  - Pregled svih korisnika
+
+---
+
+## 🧪 Test korisnički nalozi
+
+```json
+{
+  "username": "admin",
+  "password": "admin123",
+  "role": "admin"
+}
+```
+
+---
+
+## 📷 Slike proizvoda
+
+U `db.json` koriste se stabilni linkovi sa Pixabay:
+- https://cdn.pixabay.com/photo/2017/06/20/17/57/lipstick-2427999_1280.jpg
+- https://cdn.pixabay.com/photo/2021/04/30/17/53/makeup-6224396_1280.jpg
+- https://cdn.pixabay.com/photo/2017/02/07/13/51/mascara-2041853_1280.jpg
+
+---
+
+## 📌 Napomene
+
+- Svi `fetch()` pozivi koriste `http://localhost:5000/` kao bazu
+- Aplikacija koristi lokalno stanje za korpu
+- Rute su zaštićene na osnovu korisničke uloge
+
+---
+
+## 📄 Licenca
+
+Ovaj projekat je izrađen isključivo u edukativne svrhe kao deo školskog zadatka.
